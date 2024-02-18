@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct CoredataChallengeApp: App {
+    let persisitentContainer = CoreDataManager.shared.persistentContainer
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environment(\.managedObjectContext, persisitentContainer.viewContext)
         }
     }
 }

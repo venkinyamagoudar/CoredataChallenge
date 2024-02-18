@@ -14,6 +14,9 @@
 		244C5E2B2AA1900F000CB2AB /* CoredataChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244C5E2A2AA1900F000CB2AB /* CoredataChallengeTests.swift */; };
 		244C5E352AA1900F000CB2AB /* CoredataChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244C5E342AA1900F000CB2AB /* CoredataChallengeUITests.swift */; };
 		244C5E372AA1900F000CB2AB /* CoredataChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244C5E362AA1900F000CB2AB /* CoredataChallengeUITestsLaunchTests.swift */; };
+		244C5E442AA209E5000CB2AB /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244C5E432AA209E5000CB2AB /* TimerView.swift */; };
+		244C5E472AA20B1D000CB2AB /* SimpleToDoModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 244C5E452AA20B1D000CB2AB /* SimpleToDoModel.xcdatamodeld */; };
+		244C5E4B2AA20BC3000CB2AB /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244C5E4A2AA20BC3000CB2AB /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		244C5E302AA1900F000CB2AB /* CoredataChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoredataChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		244C5E342AA1900F000CB2AB /* CoredataChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoredataChallengeUITests.swift; sourceTree = "<group>"; };
 		244C5E362AA1900F000CB2AB /* CoredataChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoredataChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		244C5E432AA209E5000CB2AB /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		244C5E462AA20B1D000CB2AB /* SimpleToDoModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SimpleToDoModel.xcdatamodel; sourceTree = "<group>"; };
+		244C5E4A2AA20BC3000CB2AB /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +101,8 @@
 			isa = PBXGroup;
 			children = (
 				244C5E192AA1900C000CB2AB /* CoredataChallengeApp.swift */,
-				244C5E1B2AA1900C000CB2AB /* ContentView.swift */,
+				244C5E492AA20BA6000CB2AB /* View */,
+				244C5E482AA20B9B000CB2AB /* Model */,
 				244C5E1D2AA1900E000CB2AB /* Assets.xcassets */,
 				244C5E1F2AA1900E000CB2AB /* Preview Content */,
 			);
@@ -125,6 +132,24 @@
 				244C5E362AA1900F000CB2AB /* CoredataChallengeUITestsLaunchTests.swift */,
 			);
 			path = CoredataChallengeUITests;
+			sourceTree = "<group>";
+		};
+		244C5E482AA20B9B000CB2AB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				244C5E452AA20B1D000CB2AB /* SimpleToDoModel.xcdatamodeld */,
+				244C5E4A2AA20BC3000CB2AB /* CoreDataManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		244C5E492AA20BA6000CB2AB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				244C5E1B2AA1900C000CB2AB /* ContentView.swift */,
+				244C5E432AA209E5000CB2AB /* TimerView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +282,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				244C5E442AA209E5000CB2AB /* TimerView.swift in Sources */,
+				244C5E472AA20B1D000CB2AB /* SimpleToDoModel.xcdatamodeld in Sources */,
 				244C5E1C2AA1900C000CB2AB /* ContentView.swift in Sources */,
+				244C5E4B2AA20BC3000CB2AB /* CoreDataManager.swift in Sources */,
 				244C5E1A2AA1900C000CB2AB /* CoredataChallengeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -583,6 +611,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		244C5E452AA20B1D000CB2AB /* SimpleToDoModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				244C5E462AA20B1D000CB2AB /* SimpleToDoModel.xcdatamodel */,
+			);
+			currentVersion = 244C5E462AA20B1D000CB2AB /* SimpleToDoModel.xcdatamodel */;
+			path = SimpleToDoModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 244C5E0E2AA1900C000CB2AB /* Project object */;
 }
